@@ -1,0 +1,121 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    <html>
+        <head>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+            <apex:stylesheet value="{!URLFOR($Resource.materialize110, 'css/materialize.min.css')}" />
+            <apex:stylesheet value="{!URLFOR($Resource.materialize110, 'css/style.css')}" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
+        <body>
+            <header>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#" class="waves-effect">Item 01</a></li>
+                    <li><a href="#" class="waves-effect">Item 02</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="waves-effect">Item 03</a></li>
+                </ul>
+                <div class="navbar-fixed">
+                    <nav>
+                        <div class="nav-wrapper blue-grey darken-4">
+                            <div class="container">
+                                <a href="#" class="brand-logo">Logo</a>
+                                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                                <ul class="right hide-on-med-and-down">
+                                    <li><a href="/apex/MATE_Home" class="waves-effect waves-light">Home</a></li>
+                                    <li><a href="/apex/MATE_Content" class="waves-effect waves-light">Content</a></li>
+                                    <li><a href="/apex/MATE_Input" class="waves-effect waves-light">Input</a></li>
+                                    <li><a href="/apex/MATE_Cards" class="waves-effect waves-light">Cards</a></li>
+                                    <li><a href="/apex/MATE_Modals" class="waves-effect waves-light">Modals</a></li>
+                                    <li><a href="/apex/MATE_Side_Nav" class="waves-effect waves-light">Side Nav</a></li>
+                                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                                    <li><a href="#" class="waves-effect waves-light"><i class="material-icons">search</i></a></li>
+                                </ul>
+                                <ul class="side-nav" id="mobile-nav">
+                                    <li><a href="/apex/MATE_Home" class="waves-effect">Home</a></li>
+                                    <li><a href="/apex/MATE_Content" class="waves-effect">Content</a></li>
+                                    <li><a href="/apex/MATE_Input" class="waves-effect">Input</a></li>
+                                    <li><a href="/apex/MATE_Cards" class="waves-effect">Cards</a></li>
+                                    <li><a href="/apex/MATE_Modals" class="waves-effect">Modals</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="grey lighten-4 valign-wrapper" style="height:125px;">
+                    <div class="container">
+                        <h4>Modals - Patterns</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="section">
+                        <p><h5>Modal (Default)</h5></p>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Modal Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                            </div>
+                        <div class="modal-footer">
+                            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <p><h5>Modal (Fixed Bottom)</h5></p>
+                        <a class="modal-trigger waves-effect waves-light btn" href="#modal2">Modal</a>
+                        <div id="modal2" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <h4>Modal Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <p><h5>Modal (Bottom)</h5></p>
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal</a>
+                        <div id="modal3" class="modal bottom-sheet">
+                            <div class="modal-content">
+                                <h4>Modal Title</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="page-footer blue-grey darken-4">             
+                <div class="row">
+                    <div class="container">
+                        <div class="section">
+                            <h5 class="white-text">Footer</h5>
+                            <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright blue-grey darken-3">
+                    <div class="container">
+                        © 2016 Copyright <a class="grey-text text-lighten-4 right" href="#!">Link</a>
+                    </div>
+                </div>
+            </footer>           
+            <apex:includeScript value="{!URLFOR($Resource.materialize110, 'js/jquery-3.0.0.min.js')}" />
+            <apex:includeScript value="{!URLFOR($Resource.materialize110, 'js/materialize.min.js')}" />
+            <script>
+                jQuery(function () {
+                    $(".button-collapse").sideNav();
+                    $(".dropdown-button").dropdown();
+                    $(document).ready(function(){
+                        $('.modal-trigger').leanModal();
+                    });
+                });
+            </script>
+        </body>
+    </html>
+</apex:page>

@@ -1,0 +1,105 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    <html>
+        <head>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+            <apex:stylesheet value="{!URLFOR($Resource.materialize110, 'css/materialize.min.css')}" />
+            <apex:stylesheet value="{!URLFOR($Resource.materialize110, 'css/style.css')}" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        </head>
+        <body>
+            <header>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#" class="waves-effect">Item 01</a></li>
+                    <li><a href="#" class="waves-effect">Item 02</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="waves-effect">Item 03</a></li>
+                </ul>
+                <div class="navbar-fixed">
+                    <nav>
+                        <div class="nav-wrapper blue-grey darken-4">
+                            <div class="container">
+                                <a href="#" class="brand-logo">Logo</a>
+                                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                                <ul class="right hide-on-med-and-down">
+                                    <li><a href="/apex/MATE_Home" class="waves-effect waves-light">Home</a></li>
+                                    <li><a href="/apex/MATE_Content" class="waves-effect waves-light">Content</a></li>
+                                    <li><a href="/apex/MATE_Input" class="waves-effect waves-light">Input</a></li>
+                                    <li><a href="/apex/MATE_Cards" class="waves-effect waves-light">Cards</a></li>
+                                    <li><a href="/apex/MATE_Modals" class="waves-effect waves-light">Modals</a></li>
+                                    <li><a href="/apex/MATE_Side_Nav" class="waves-effect waves-light">Side Nav</a></li>
+                                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                                    <li><a href="#" class="waves-effect waves-light"><i class="material-icons">search</i></a></li>
+                                </ul>
+                                <ul class="side-nav" id="mobile-nav">
+                                    <li><a href="/apex/MATE_Home" class="waves-effect">Home</a></li>
+                                    <li><a href="/apex/MATE_Content" class="waves-effect">Content</a></li>
+                                    <li><a href="/apex/MATE_Input" class="waves-effect">Input</a></li>
+                                    <li><a href="/apex/MATE_Cards" class="waves-effect">Cards</a></li>
+                                    <li><a href="/apex/MATE_Modals" class="waves-effect">Modals</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <apex:image value="{!URLFOR($Resource.materialize110, 'img/stock01.jpg')}" />
+                            <div class="caption center-align">
+                                <h3>This is our big Tagline!</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <apex:image value="{!URLFOR($Resource.materialize110, 'img/stock02.jpg')}" />
+                            <div class="caption left-align">
+                                <h3>Left Aligned Caption</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <apex:image value="{!URLFOR($Resource.materialize110, 'img/stock03.jpg')}" />
+                            <div class="caption right-align">
+                                <h3>Right Aligned Caption</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="section">
+                        <h4>Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+                    </div>
+                </div>
+            </main>
+            <footer class="page-footer blue-grey darken-4">             
+                <div class="row">
+                    <div class="container">
+                        <div class="section">
+                            <h5 class="white-text">Footer</h5>
+                            <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright blue-grey darken-3">
+                    <div class="container">
+                        © 2016 Copyright <a class="grey-text text-lighten-4 right" href="#!">Link</a>
+                    </div>
+                </div>
+            </footer>           
+            <apex:includeScript value="{!URLFOR($Resource.materialize110, 'js/jquery-3.0.0.min.js')}" />
+            <apex:includeScript value="{!URLFOR($Resource.materialize110, 'js/materialize.min.js')}" />
+            <script>
+                jQuery(function () {
+                    $(".button-collapse").sideNav();
+                    $(".dropdown-button").dropdown();
+                    $('.slider').slider({full_width: true, indicators: false});
+                });
+            </script>
+        </body>
+    </html>
+</apex:page>

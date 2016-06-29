@@ -1,0 +1,10 @@
+.DS_Store
+.project
+.settings/com.salesforce.ide.core.prefs
+Referenced Packages/
+config/
+debug/
+*.sublime-project
+*.sublime-settings
+*.sublime-workspace
+salesforce.schema

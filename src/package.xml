@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MATE_Cards</members>
+        <members>MATE_Content</members>
+        <members>MATE_Home</members>
+        <members>MATE_Input</members>
+        <members>MATE_Modals</members>
+        <members>MATE_Side_Nav</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>MATE_Materialize</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>MATE_Materialize_Home</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>MATE_User</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>materialize110</members>
+        <name>StaticResource</name>
+    </types>
+    <version>34.0</version>
+</Package>
