@@ -27,7 +27,7 @@
 						</li>
 					</ul>
 				</ul>
-				<a href="#" class="brand-logo right">Logo</a>
+				<a href="#" class="brand-logo right"><apex:image value="{!URLFOR($Resource.materialize110, 'img/lilly_logo_white_small.png')}" height="63px" styleClass="logo" /></a>
 				<a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only" style="padding-left: 15px"><i class="material-icons">menu</i></a>
 			</nav>
             <main>
